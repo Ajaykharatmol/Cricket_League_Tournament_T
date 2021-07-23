@@ -7,8 +7,8 @@ from django.views.static import serve
 from django.conf.urls import url
 
 urlpatterns = [
-    path('', include('Cricket_APP.urls')),
-    path('Cricket_Tournament_API/', include('Cricket_Tournament_API.urls')),
+    
+    path('', include('Cricket_Tournament_API.urls')),
     path('admin/', admin.site.urls),
 
     url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 

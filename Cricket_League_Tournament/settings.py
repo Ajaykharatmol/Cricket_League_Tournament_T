@@ -25,7 +25,7 @@ SECRET_KEY = 'q28#g@hq)2br9c%+10v3x#!qmkqfbp^*sdb)u_+nvxi162x+gf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','cricketleaguetournament.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','crickettournamentapp.herokuapp.com']
 
 
 # Application definition

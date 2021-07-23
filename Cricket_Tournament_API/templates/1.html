@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="project">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="vinayak sharma">
+  
+    <title>{{title}}</title>
+  
+  
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootstrap file-->
+  
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="" />
+  
+  
+    
+     <style>
+    body{
+      padding: 0px;
+      margin: 0px;
+      background-image:linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(/static/images/3.jpg);
+      background-size: cover;
+      background-color: ; 
+    }
+    .notification {
+  background-color;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -1px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+  </style>
+  </head>
+
+  <body class="container-fluid">
+<header class="row">
+  
+      <!-- navbar-->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav navbar-right">
+             
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br/>
+   
+  </body>
+
+  <head>
+            <style>
+              table, th, td {
+                border: 2px solid black;
+              }
+            </style>
+         </head>
+            <body>
+              <h>sdaa</h>
+              <p>&nbsp;</p> 
+              <h1 style="text-align: center;">Covid-19 data from api</h1>
+              <hr>
+              
+         
+         <p>&nbsp;</p> 
+         <h1></h1>
+         <p>&nbsp;</p>   
+         <table>
+              <tr>
+                
+                <th>Nations</th>
+                <th>Tournament</th>
+                <th>Period</th>
+                
+              </tr>
+              <tr>
+              {% for d in  products %}
+
+ <td height="100",col width="150">{{d.Nations}}</td>
+  <td height="100",col width="150">{{d.Tournament}}</td>
+  <td height="100",col width="150">{{d.Period}}</td>
+  
+  
+                 </tr>
+                {% endfor%}
+              </table>
+              <p>&nbsp;</p> 
+              <p>&nbsp;</p> 
+              
+              
+          </body>
+            </html>

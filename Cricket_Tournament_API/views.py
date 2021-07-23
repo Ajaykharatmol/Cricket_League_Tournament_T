@@ -311,7 +311,7 @@ import requests
     #return render(request,'dashboard.html')
 
 def index(request):
-    res = requests.get('https://crickettournamentapp.herokuapp.com/countries/')
+    res = requests.get('https://cricketleaguetournament.herokuapp.com/Cricket_Tournament_API/countries/')
 
     response_data = res.json()
     
